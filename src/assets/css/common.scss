@@ -1,0 +1,148 @@
+
+li {
+  list-style-type: none;
+}
+
+*, :before, :after {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+body {
+  font: 16px 'Microsoft YaHei',Arial,Simsun,Helvetica,sans-serif;
+  background: #f5f8f9;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+em, i {
+  font-style: normal;
+}
+
+input, select, textarea {
+  border: none;
+  font-family: 'Microsoft YaHei',Arial,Simsun,Helvetica,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
+
+img{
+  border: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.oe {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*position sticky*/
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.lazyimg {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-fade-left-enter-active,
+.slide-fade-left-leave-active,
+.slide-fade-right-enter-active,
+.slide-fade-right-leave-active {
+  transition: all .5s ease;
+}
+.slide-fade-left-enter,
+.slide-fade-left-leave-active{
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.slide-fade-right-enter,
+.slide-fade-right-leave-active {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.main-view{
+  width: 100%;
+  background: #fff;
+  min-height: 870px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  border-radius: 4px;
+  padding: 0 20px;
+
+  &.mt{
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+}
+
+.pager{
+  padding: 20px;
+  height: 70px;
+  text-align: right;
+}
+
+.el-popover{
+  padding: 0;
+}
+
+.el-menu-item-view{
+  height: 61px;
+
+  .btn-list{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 60px;
+  }
+}
+
+.el-breadcrumb{
+  font-size: 18px !important;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner{
+  color: #999 !important
+}
+.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link{
+  color: #000 !important;
+  font-weight: 400 !important
+}
+.el-dialog__body{
+  padding: 0 20px !important
+}

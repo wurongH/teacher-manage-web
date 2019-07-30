@@ -1,0 +1,127 @@
+.card-list{
+  width: 100%;
+  height: auto;
+
+  li{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    width: 360px;
+    height: 366px;
+    background: #fff;
+    border-radius: 3px;
+    float: left;
+    margin: 0 30px 30px 0;
+    border: 1px solid #e4e7ed;
+
+    &.add{
+      text-align: center;
+      font-size: 18px;
+      padding-top: 113px;
+      cursor: pointer;
+
+      &.pt{
+        padding-top: 130px;
+      }
+      .i-add{
+        background: url('~@/assets/images/add.png');
+        width: 48px;
+        height: 48px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+      p{
+        color: #333;
+        line-height: 30px;
+        margin-top: 18px;
+      }
+      span{
+        line-height: 34px;
+        color: #0f88eb;
+        text-decoration: underline;
+      }
+    }
+    &.item{
+      padding: 20px 25px 0;
+
+      .title{
+        line-height: 33px;
+        font-size: 18px;
+        color: #333;
+        width: 100%;
+      }
+      .count{
+        line-height: 30px;
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 16px;
+
+        span{
+          padding-left: 5px;
+          color: #0f88eb;
+        }
+      }
+      .lazyimg{
+        width: 100%;
+        height: 194px;
+        cursor: pointer;
+      }
+      .operation{
+        height: 70px;
+        font-size: 30px;
+        padding: 20px 0;
+
+        .i-edit,.i-more,.i-code{
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+        .i-edit{
+          background: url('~@/assets/images/edit.png') no-repeat center center;
+        }
+        .i-more{
+          background: url('~@/assets/images/more.png') no-repeat center center;
+        }
+        .i-code{
+          background: url('~@/assets/images/code.png') no-repeat center center;
+        }
+      }
+      .more-view{
+        border-radius: 3px;
+        width: 120px;
+        height: 100px;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+        position: absolute;
+        right: 0;
+        bottom: -110px;
+        background: #fff;
+        z-index: 999;
+
+        &:after{
+          content: '';
+          position: absolute;
+          right: 30px;
+          top: -6px;
+          width: 14px;
+          height: 6px;
+          background-image: url('~@/assets/images/triangle.png');
+        }
+        div{
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          color: #666;
+          padding-left: 48px;
+          cursor: pointer;
+
+          &.details{
+            background: url('~@/assets/images/details.png') no-repeat 20px center;
+            border-bottom: 1px solid #eee;
+          }
+          &.del{
+            background: url('~@/assets/images/del.png') no-repeat 20px center;
+          }
+        }
+      }
+    }
+  }
+}
